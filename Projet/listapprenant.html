@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: .9rem;
+            }
+            body{
+                height: 100vh;
+                background: #F5F5F5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 1%;
+            }
+
+            /******************listdsApprenant******************/
+            .container2{
+                width: 72%;
+                height: 6%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #fff;
+                border-radius: 10px;
+                padding: 1%;
+                margin-bottom: 1.4%;
+            }
+
+            .container3{
+                width: 72%;
+                height: 90%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #fff;
+                border-radius: 10px;
+                padding: 1%;
+                
+            }
+            .bare1{
+                width: 0.1%;
+                height: 90%;
+                background-color: #008F89;
+                margin: 2% 0 0 2%;
+                position: relative;
+            }
+            .bare1::before{
+                content: "1" ;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                background-color: #008F89;
+                top: -20px;
+                left: -20px;
+                border-radius: 50%;
+                
+            }
+
+            .bare1::after{
+                content: "Apprenants" ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                top: -20px;
+                left: 40px;
+            
+            }
+
+            .containerIntern{
+                width: 100%;
+                height: 100%;
+                margin: 1%;
+                padding: 1%;
+                display: flex;
+            
+                margin-top: 14%;
+                flex-direction: column;
+            }
+
+            .divhaut{
+                width: 100%;
+                height: 9%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .btns{
+                width: 55%;
+                height: 100%;
+                display: flex;
+                gap: 1%;
+                font-size: .9rem !important;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .btn{
+                height: 5em;
+                width: 8em;
+                border-radius: 5px;
+                height: 80%;
+                border: none;
+                color: white;
+                padding: 0.5%;
+                font-size: .95rem !important;
+                cursor: pointer;
+            }
+            .new{
+                background-color:#048E88 ;
+            }
+            .mass{
+            
+                background-color: #FA8501;
+            }
+
+            .model{
+                background-color: #0381A8;
+            }
+            .exclu{
+                background-color: #0C449A ;
+            }
+
+            .recherch{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                input{
+                    width: 90%;
+                    border-radius: 5px;
+                    border: none;
+                    padding: 1%;
+                }
+                i{
+                    font-size: 20px;
+                    color: #008F89;
+                    width: 10%;
+                }
+            }
+
+            .logo1{
+                display: flex;
+                justify-content: start;
+                align-items: start;
+                position: relative;
+                width: 40%;
+                margin: 1%;
+            }
+
+            .table1{
+                width: 100%;
+                height: 100%;
+                
+            table{
+                width: 100%;
+                height: 14%;
+                margin: 1%;
+                thead{
+                    width: 100%;
+                    height: 100%;
+                    
+                    background-color: #F7FAFF;
+                    tr{
+                        width: 100%;
+                        height: 100%;
+                        margin: 20%;
+                        th{
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #221328;
+                            text-align: center;
+                            }
+                    }
+                }
+                tbody{
+                    
+                    tr{
+                        td{
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #221328;
+                            text-align: center;
+                            
+                        }
+                    }
+                }
+
+
+            }
+            
+            } 
+            .img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                position: relative;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background:#08B0D5;
+                img{
+                    width: 100%;
+                    height: 100%;
+                
+                }
+            }
+
+
+            .checkbox{
+                width: 16px;
+                height: 16px;
+                border: none;
+                background-color: none;
+            }
+
+            .items1{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 65%;
+                bottom: 4%;
+                margin-top: 1%;
+                position: absolute;
+
+            .page{
+                width: 60%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2%;
+                button{
+                    background-color: white;
+                    border-radius: 5px;
+                    border: none;
+                    font-size: 20px;
+                    color: #F5F5F5;
+                    width: 40px;
+                    height: 40px;
+                    
+                }
+            }
+            }
+    </style>
+</head>
+<body>
+    <div class="containe1">
+        <span>Promotions</span>
+        <span>Promos . Liste . Détails . Apprenants</span>
+    </div>
+    <div class="container2">
+        <span class="span">
+            Promotion: <span>Promotion 6</span>
+        </span>
+        <span class="span">
+            Référentiel: <span>Dev Web/mobile</span>
+        </span>
+    </div>
+    <div class="container3">
+        <div class="bare1"></div>
+        <div class="containerIntern">
+            <div class="divhaut">
+                <span>Liste Des Apprenants <span style="color: #009186;">(50)</span></span>
+                <div class="btns">
+                    <button class="btn new">+ Nouveau</button>
+                    <button class="btn mass">Insertion en masse</button>
+                    <button class="btn model">Fichier model</button>
+                    <button class="btn exclu">Liste des Exclus</button>
+                </div>
+            </div>
+           
+            <div style="width: 100%;position: relative;" class="">
+
+                <input type="text" placeholder="Filtrer">
+                <i class="fa-solid fa-magnifying-glass" style="position: absolute;width: 26px; height: 26px; left: 33px;top: 10px;color: #010101"></i>
+                
+               
+        </div>
+        <div class="logo1" >
+            <img src="./img/icon3.png" alt="">
+        </div>
+        <div class="table1">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Email</th>
+                        <th>Genre</th>
+                        <th>Téléphone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="display: flex;justify-content: center;align-items: center"><div class="img"><img src="./img/tete.png" alt=""></div></td>
+                        <td ><span style="color: #417b33;">Mbow</span></td>
+                        <td ><span style="color: #417b33;">Baye Saer</span></td>
+                        <td>mbowbayesaer44@gmail.com</td>
+                        <td>M</td>
+                        <td>777220308</td>
+                        <td><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex;justify-content: center;align-items: center"><div class="img"><img src="./img/tete.png" alt=""></div></td>
+                        <td ><span style="color: #417b33;">Mbow</span></td>
+                        <td ><span style="color: #417b33;">Baye Saer</span></td>
+                        <td>mbowbayesaer44@gmail.com</td>
+                        <td>M</td>
+                        <td>777220308</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex;justify-content: center;align-items: center"><div class="img"><img src="./img/tete.png" alt=""></div></td>
+                        <td ><span style="color: #417b33;">Mbow</span></td>
+                        <td ><span style="color: #417b33;">Baye Saer</span></td>
+                        <td>mbowbayesaer44@gmail.com</td>
+                        <td>M</td>
+                        <td>777220308</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex;justify-content: center;align-items: center"><div class="img"><img src="./img/tete.png" alt=""></div></td>
+                        <td ><span style="color: #417b33;">Mbow</span></td>
+                        <td ><span style="color: #417b33;">Baye Saer</span></td>
+                        <td>mbowbayesaer44@gmail.com</td>
+                        <td>M</td>
+                        <td>777220308</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex;justify-content: center;align-items: center"><div class="img"><img src="./img/tete.png" alt=""></div></td>
+                        <td ><span style="color: #417b33;">Mbow</span></td>
+                        <td ><span style="color: #417b33;">Baye Saer</span></td>
+                        <td>mbowbayesaer44@gmail.com</td>
+                        <td>M</td>
+                        <td>777220308</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex;justify-content: center;align-items: center"><div class="img"><img src="./img/tete.png" alt=""></div></td>
+                        <td ><span style="color: #417b33;">Mbow</span></td>
+                        <td ><span style="color: #417b33;">Baye Saer</span></td>
+                        <td>mbowbayesaer44@gmail.com</td>
+                        <td>M</td>
+                        <td>777220308</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex;justify-content: center;align-items: center"><div class="img"><img src="./img/tete.png" alt=""></div></td>
+                        <td ><span style="color: #417b33;">Mbow</span></td>
+                        <td ><span style="color: #417b33;">Baye Saer</span></td>
+                        <td>mbowbayesaer44@gmail.com</td>
+                        <td>M</td>
+                        <td>777220308</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex;justify-content: center;align-items: center"><div class="img"><img src="./img/tete.png" alt=""></div></td>
+                        <td ><span style="color: #417b33;">Mbow</span></td>
+                        <td ><span style="color: #417b33;">Baye Saer</span></td>
+                        <td>mbowbayesaer44@gmail.com</td>
+                        <td>M</td>
+                        <td>777220308</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex;justify-content: center;align-items: center"><div class="img"><img src="./img/tete.png" alt=""></div></td>
+                        <td ><span style="color: #417b33;">Mbow</span></td>
+                        <td ><span style="color: #417b33;">Baye Saer</span></td>
+                        <td>mbowbayesaer44@gmail.com</td>
+                        <td>M</td>
+                        <td>777220308</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    
+            </table>
+            <div class="items1">
+                <div>
+                <span>Items par page</span>
+                <select name="" id="">
+                    <option value="">10</option>
+                    <option value="">20</option>
+                    <option value="">30</option>
+                </select>
+                </div>
+                <div style="display: flex;justify-content: space-between;width: 15%;align-items: center">
+                    <span>1-1 of 1 </span>  <span class="page"> <button>|<</button><button><</button><button>></button><button>>|</button></span> 
+                 </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
