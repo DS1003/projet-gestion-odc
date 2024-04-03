@@ -18,25 +18,28 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                padding: 1%;
+        
             }
 
             /******************listdsApprenant******************/
+            .containe1 {
+                position: relative;
+                left: 27%;     
+                margin-bottom: .5%;         
+            }
             .container2{
                 width: 72%;
                 height: 6%;
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
                 background-color: #fff;
                 border-radius: 10px;
-                padding: 1%;
-                margin-bottom: 1.4%;
+                margin-bottom: .5%;
             }
 
             .container3{
                 width: 72%;
-                height: 90%;
+                height: 80%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -44,6 +47,12 @@
                 border-radius: 10px;
                 padding: 1%;
                 
+            }
+
+            .table1 {
+                position: relative;
+                height: 80%;
+                width: 80%;
             }
             .bare1{
                 width: 0.1%;
@@ -65,7 +74,6 @@
                 top: -20px;
                 left: -20px;
                 border-radius: 50%;
-                
             }
 
             .bare1::after{
@@ -83,12 +91,12 @@
 
             .containerIntern{
                 width: 100%;
-                height: 100%;
+                height: 85%;
                 margin: 1%;
                 padding: 1%;
                 display: flex;
-            
-                margin-top: 14%;
+                position: relative;
+                top: 2%;
                 flex-direction: column;
             }
 
@@ -103,20 +111,19 @@
                 height: 100%;
                 display: flex;
                 gap: 1%;
-                font-size: .9rem !important;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
             }
             .btn{
                 height: 5em;
-                width: 8em;
+                width: 8.7em;
                 border-radius: 5px;
                 height: 80%;
                 border: none;
                 color: white;
                 padding: 0.5%;
-                font-size: .95rem !important;
+                font-size: .99em;
                 cursor: pointer;
             }
             .new{
@@ -133,14 +140,20 @@
             .exclu{
                 background-color: #0C449A ;
             }
-
+            .divfilter {
+                height: 90%;
+            }
+            #filter {
+                width: 100%;
+                height: 100%;
+            }
             .recherch{
                 width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 input{
-                    width: 90%;
+                    width: 100%;
                     border-radius: 5px;
                     border: none;
                     padding: 1%;
@@ -232,10 +245,11 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 65%;
+                width: 90%;
                 bottom: 4%;
                 margin-top: 1%;
-                position: absolute;
+                position: relative;
+                top: 6%;
 
             .page{
                 width: 60%;
@@ -263,10 +277,10 @@
         <span>Promos . Liste . Détails . Apprenants</span>
     </div>
     <div class="container2">
-        <span class="span">
+        <span class="span" style="position: relative; left: 2%;">
             Promotion: <span>Promotion 6</span>
         </span>
-        <span class="span">
+        <span class="span" style="position: relative; left: 72%;">
             Référentiel: <span>Dev Web/mobile</span>
         </span>
     </div>
@@ -283,12 +297,9 @@
                 </div>
             </div>
            
-            <div style="width: 100%;position: relative;" class="">
-
-                <input type="text" placeholder="Filtrer">
+            <div style="width: 100%;position: relative;" class="divfilter">
+                <input id="filter" type="text" placeholder="Filtrer">
                 <i class="fa-solid fa-magnifying-glass" style="position: absolute;width: 26px; height: 26px; left: 33px;top: 10px;color: #010101"></i>
-                
-               
         </div>
         <div class="logo1" >
             <img src="./img/icon3.png" alt="">
@@ -379,16 +390,6 @@
                         <td>777220308</td>
                         <td><input type="checkbox"></td>
                     </tr>
-                    <tr>
-                        <td style="display: flex;justify-content: center;align-items: center"><div class="img"><img src="./img/tete.png" alt=""></div></td>
-                        <td ><span style="color: #417b33;">Mbow</span></td>
-                        <td ><span style="color: #417b33;">Baye Saer</span></td>
-                        <td>mbowbayesaer44@gmail.com</td>
-                        <td>M</td>
-                        <td>777220308</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    
             </table>
             <div class="items1">
                 <div>
