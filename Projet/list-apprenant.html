@@ -14,6 +14,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
@@ -26,6 +27,23 @@
             width: 100%;
             height: 100%;
             display: flex;
+        }
+        .params {
+            position: fixed;
+            z-index: 999;
+            bottom: 1.5%;
+            right: 1%;
+            background-color: #009087;
+            height: 5.8%;
+            width: 3%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .params:hover {
+            background-color: rgb(46, 46, 46);
         }
         .right {
             width: 82%;
@@ -455,10 +473,6 @@
         td {
             text-align: center;
         }
-        td>input {
-            border: none;
-            height: 2em;
-        }
         td>div>img {
             height: 2.5em;
             background-color: #009087;
@@ -466,8 +480,9 @@
         }
     </style>
 </head>
-<body>:
+<body>
     <div class="container">
+        <div class="params"><i class="fa-params fa-solid fa-gear" style="color: #ffffff;"></i></div>
         <input style="display: none;" type="checkbox" id="toggleSidebar">
         <div class="sidebar">
             <img id="logo" src="/Projet/images/logo-SA.png" alt="">
@@ -505,7 +520,7 @@
                <div class="list-app">
                 <div class="div1">
                     <p style="font-size: 1rem; padding: 1em;">Promotion: <span style="color: #009087; font-size: 1.1rem;">Promotion 6</span></p>
-                    <p style="font-size: 1rem; padding: 1em; position: relative; left: 63%;">Référentiel: <span style="color: #009087; font-size: 1.1rem;">Dev Web/mobile</span></p>
+                    <p style="font-size: 1rem; padding: 1em; position: relative; left: 60%;">Référentiel: <span style="color: #009087; font-size: 1.1rem;">Dev Web/mobile</span></p>
                 </div>
                 <div class="div2">
                     <div class="etape1">
